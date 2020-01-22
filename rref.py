@@ -31,7 +31,7 @@ def rref(matrix):
         # multiples of of the ith row from the others
         for i_ in range(len(A)):
             if i_ != i:
-                A[i_] = A[i_] - A[i] * A[i_][j] / A[i][j]
+                A[i_] = A[i_] - A[i] * A[i_][j]
 
         # if reached the end, break
         if (i == len(A) - 1) or (j == len(A[0]) - 1): 
